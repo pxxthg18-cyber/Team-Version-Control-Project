@@ -1,0 +1,2 @@
+Team project message: Welcome everyone.
+Update this same line differently on two branches to practice a merge conflict.
