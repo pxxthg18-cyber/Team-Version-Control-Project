@@ -1,2 +1,4 @@
+# Module 2: Project status functionality
+
 def project_status():
-    return "Project status: In progress"
+    return "Project status: Completed"
