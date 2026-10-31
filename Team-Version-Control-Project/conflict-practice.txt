@@ -1,2 +1,2 @@
-Team project message: Welcome everyone.
+Team project message: Welcome from Team Member 1.
 Update this same line differently on two branches to practice a merge conflict.
