@@ -1,40 +1,45 @@
+
 # Team Version Control Project
 
-A small sample team project used to demonstrate Git and GitHub collaboration:
-- a shared project structure
-- module-specific branches
-- commits and pull requests
-- code review before merging
-- merge conflict resolution
+## Aim
+To implement collaborative version control using Git and GitHub by creating branches, managing commits, reviewing pull requests, merging changes, and resolving merge conflicts.
 
-## Project modules
-- `modules/module1.py` — greeting module
-- `modules/module2.py` — status module
-- `modules/module3.py` — summary module
+## Tools Used
+- Git
+- GitHub
+- Visual Studio Code
 
-## Suggested team workflow
-1. Clone the repository.
-2. Create a branch for your assigned module (for example, `feature/module1`).
-3. Make changes and commit them on that branch.
-4. Push the branch to GitHub.
-5. Open a pull request targeting `main`.
-6. Ask a teammate to review the changes.
-7. Merge the pull request after approval.
-8. Repeat for the remaining modules.
+## Project Modules
+- **Module 1:** Greeting functionality
+- **Module 2:** Project status functionality
+- **Module 3:** Project summary functionality
 
-## Merge conflict practice
-To practice conflict resolution, have two branches edit the same line in `conflict-practice.txt`.
-Merge one branch first, then merge the other. Git will report a conflict.
-Edit the file so both intended changes are preserved, then run:
+## Branching Strategy
+The `main` branch contains the stable project version. Separate feature branches were created for individual modules.
 
-```bash
-git add conflict-practice.txt
-git commit -m "Resolve merge conflict"
-```
+| Branch | Purpose |
+|---|---|
+| `main` | Stable project version |
+| `feature/module1` | Module 1 development |
+| `feature/module2` | Module 2 development |
+| `feature/module3` | Module 3 development |
+| `feature/member1-conflict` | First conflicting change |
+| `feature/member2-conflict` | Second conflicting change |
 
-## Run the sample
-From the project root:
+## Version Control Workflow
+1. Initialized a local Git repository.
+2. Added project files and created the initial commit.
+3. Connected the local repository to GitHub.
+4. Created individual feature branches for modules.
+5. Committed and pushed changes to the corresponding branches.
+6. Created pull requests targeting `main`.
+7. Reviewed the changes before merging.
+8. Merged approved pull requests into `main`.
+9. Created conflicting edits in two branches.
+10. Resolved the merge conflict and committed the resolution.
 
-```bash
-python main.py
-```
+## Merge Conflict Resolution
+A merge conflict was demonstrated by modifying the same line in `conflict-practice.txt` on two branches. Git identified the conflicting changes during merging. The conflict was manually resolved by combining both contributions, followed by staging and committing the resolved file.
+
+## Conclusion
+The experiment demonstrated Git and GitHub collaboration through repository creation, branch management, commits, pull requests, code review, merging, and merge conflict resolution.
